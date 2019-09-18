@@ -8,4 +8,4 @@ For example:
      persistence(999) == 4 // because 9*9*9 = 729, 7*2*9 = 126,
                             // 1*2*6 = 12, and finally 1*2 = 2
 
-     persistence(4) == 0 // because 4 is already a one-digit number
+     persistence(4) == 0 // because 4 is already a one-digit number 
