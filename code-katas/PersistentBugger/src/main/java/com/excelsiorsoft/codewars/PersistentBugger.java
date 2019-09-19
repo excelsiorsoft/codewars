@@ -20,10 +20,9 @@ package com.excelsiorsoft.codewars;
  */
 public class PersistentBugger {
 	public static void main(String[] args) {
-		
-		PersistentBugger pg = new PersistentBugger();
-		System.out.println(pg.persistence(999));
-		
+
+		System.out.println(PersistentBugger.persistence(999));
+
 	}
 
 	public static int persistence(long n) {
@@ -32,8 +31,10 @@ public class PersistentBugger {
 		if (r / 10 == 0)
 			return 0;
 
-		for (r = n; r != 0; r /= 10)
-			m *= r % 10;
+		for (r = n; r != 0;) {
+			m *= r % 10;  System.out.println("m="+m);
+			r /= 10; System.out.println("r="+r);
+		}
 
 		return persistence(m) + 1;
 	}
