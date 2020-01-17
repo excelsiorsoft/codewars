@@ -32,8 +32,8 @@ public class PersistentBugger {
 			return 0;
 
 		for (r = n; r != 0;) {
-			m *= r % 10;  System.out.println("m="+m);
-			r /= 10; System.out.println("r="+r);
+			m *= r % 10;  
+			r /= 10; 
 		}
 
 		return persistence(m) + 1;
