@@ -1,1 +1,1 @@
-![Problem](Problem_images\Problem.png)
+![Problem](Problem.png)
